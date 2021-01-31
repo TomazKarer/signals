@@ -1,5 +1,5 @@
-FROM alpine:3.13.1
+FROM bash:4.4
 
-COPY signals.sh signals.sh
+COPY signals.sh /
 
-ENTRYPOINT ["signals.sh"]
+ENTRYPOINT ["bash", "/signals.sh"]
